@@ -12,3 +12,6 @@ function getArticelById($authors, $article) {
 };
 
 print_r(getArticelById($authors, $article));
+
+
+// whrite code for creating an new side for article

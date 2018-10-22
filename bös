@@ -3,6 +3,7 @@
 <p> <?= $article[2]['name']?> </p>
 
 
+// maby a get time from txt file
 $filename = 'somefile.txt';
 if (file_exists($filename)) {
     echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
@@ -73,3 +74,21 @@ if (file_exists($filename)) {
     inert chunk of randomly assembled molecules drifting wherever the universe blows you. Oh,
     I'm sorry, Jerry, I didn't see you there, how much of that did you hear?"],
   ];
+
+
+// get author articles code
+
+
+  foreach ($articles as $article) :
+    if ($article['author'] === $name) :?>
+    <br>
+    <a class="t-0" href="" style="color: black; text-decoration: none;">
+    <h2 > <?= $article['title']; ?> </h2>
+    <h6> <?= $article['content']; ?> </h6>
+    </a>
+    <a class="t-0" href="" style="color: black; text-decoration: none;">
+    <p> <?= $article['author'].'  '.$article['date']; ?> </p> </a>
+
+
+
+<?php endif; endforeach; ?>

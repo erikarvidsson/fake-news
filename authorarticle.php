@@ -43,37 +43,19 @@ require __DIR__.'/data.php';
         </div>
         <h1 > NYHETSSIDA </h1>
 </div>
-              <div class="row content col-12">
-                  <div class="container">
-                    <h1>NEWS</h1>
-                    <?php foreach ($articles as $article) : ?>
-                      <br>
-                      <a class="t-0" href="" style="color: black; text-decoration: none;">
-                      <h2 > <?= $article['title']; ?> </h2>
-                      <h6> <?= $article['content']; ?> </h6>
-                      </a>
-                      <a class="t-0" href="" style="color: black; text-decoration: none;">
-                      <p> <?= $article['author'].'  '.$article['date']; ?> </p> </a>
+    <!-- Gett all articels from specific author -->
+                <?php foreach ($articles as $article) :
+                    if ($article['author'] === $name) :?>
+                    <br>
+                    <a class="t-0" href="" style="color: black; text-decoration: none;">
+                    <h2 > <?= $article['title']; ?> </h2>
+                    <h6> <?= $article['content']; ?> </h6>
+                    </a>
+                    <a class="t-0" href="" style="color: black; text-decoration: none;">
+                    <p> <?= $article['author'].'  '.$article['date']; ?> </p> </a>
 
-                      <script type="text/javascript" src="//100widgets.com/js_data.php?id=259"></script>
-                  <?php endforeach ; ?>
+                <?php endif; endforeach; ?>
                   </div>
               </div>
 
       </nav>
-
-
-
-
-
-
-
-
-    </div>
-
-
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
-</html>

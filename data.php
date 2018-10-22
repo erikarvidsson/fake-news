@@ -29,17 +29,3 @@ $articles =[
 ];
 
 $name = $authors[2]['name'];
-
-  foreach ($articles as $article) :
-    if ($article['author'] === $name) :?>
-    <br>
-    <a class="t-0" href="" style="color: black; text-decoration: none;">
-    <h2 > <?= $article['title']; ?> </h2>
-    <h6> <?= $article['content']; ?> </h6>
-    </a>
-    <a class="t-0" href="" style="color: black; text-decoration: none;">
-    <p> <?= $article['author'].'  '.$article['date']; ?> </p> </a>
-
-
-
-<?php endif; endforeach; ?>
