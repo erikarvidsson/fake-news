@@ -17,8 +17,6 @@ $authors = [
 
 
 
-
-
 // get arrticle
 
 $articles =[
