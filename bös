@@ -1,0 +1,75 @@
+<p> <?php foreach ($article as $news) {echo $news['id'].'was written'.$news['date'].'<br>';} ?> </p>
+
+<p> <?= $article[2]['name']?> </p>
+
+
+$filename = 'somefile.txt';
+if (file_exists($filename)) {
+    echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
+}
+?>
+
+
+
+<div class="row container col-8">
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h5><?php echo $articles2[0]['title']; ?>
+          </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <p><?php echo $articles2[0]['content']; ?></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <p><?php foreach ($articles as $articel) {
+    echo '<br>'.$articel['author'].'<br>'.'<br>'.$articel['content'].'<br>';  }
+    ?> </p>
+  </div>
+
+
+
+
+
+
+
+
+  // the news writen in the articles
+  $articles = [
+    ['author' => 'author1',
+    'title' => 'First test article',
+    'date' => 2018-10-13,
+    'id' => 1,
+    'content' =>
+    "That, out there. That's my grave. On one of our adventures Rick and
+    I basically destroyed the whole world. So we bailed on that reality
+    and we came to this one. Because in this one the world wasn't destroyed.
+    And in this one, we were dead. So we came here a-a-and we buried ourselves and
+    we took their place. And every morning, Summer, I eat breakfast 2"],
+
+    ['author' => 'author2',
+    'title' => 'First test article',
+    'date' => 2018-10-12,
+    'id' => 2,
+    'content' =>
+    "Do you know how many characters there are in the Simpsons Morty? There's
+    like a-a billion characters, M-Morty. There was an episode where Former
+    President BUSH was their neighbor!"],
+
+    ['author' => 'author3',
+    'title' => 'First test article',
+    'date' => 2018-10-11,
+    'id' => 3,
+    'content' =>
+    "I do not have discolored butthole flaps. Puffy vagina. Dont mind those stare goblins.
+    Rick Listen to your sister Morty; to live is to risk it all; otherwise you're just an
+    inert chunk of randomly assembled molecules drifting wherever the universe blows you. Oh,
+    I'm sorry, Jerry, I didn't see you there, how much of that did you hear?"],
+  ];
