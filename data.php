@@ -5,7 +5,7 @@ declare(strict_types=1);
 
 
 $authors = [
-['name' => 'Erik', 'id' => 1],
+['name' => 'Erik Arvidsson', 'id' => 1],
 ['name' => 'author2', 'id' => 2],
 ['name' => 'Author3', 'id' => 3],
 ['name' => 'author4', 'id' => 4],
@@ -20,10 +20,14 @@ $authors = [
 // get arrticle
 
 $articles =[
-    ['title' => 'Första artikeln', 'content' => file_get_contents(__DIR__.'/content/article1.txt'), 'date' => '2018-10-15', 'author' => 'Erik'],
-    ['title' => 'Andra artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author2'],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3'],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3'],
+    ['title' => 'Första artikeln', 'content' => file_get_contents(__DIR__.'/content/article1.txt'), 'date' => '2018-10-15', 'author' => 'Erik', 'id' => '1', 'img' => 'https://github.com/erikarvidsson.png'],
+    ['title' => 'Andra artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author2', 'id' => '2'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '3'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '4'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '5'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '6'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '7'],
+    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => '8'],
 ];
 
 $name = $authors[2]['name'];

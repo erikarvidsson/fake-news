@@ -3,9 +3,10 @@
 </div>
               <div class="row content col-12">
                 <div class="container">
-    <!-- Gett all articels from specific author -->
+    <!-- Gett all articels from specific id in articels -->
               <?php foreach ($articles as $article) :
-                    if ($article['author'] === $_GET['author']) :?>
+                    if ($article['id'] === $_GET['id']) :?>
+                    <img src="<?= $article['img'];?>" alt="">
                     <br>
                     <h2 > <?= $article['title']; ?> </h2>
                     <h6> <?= $article['content']; ?> </h6>
@@ -14,6 +15,8 @@
               <?php endif; endforeach; ?>
                   </div>
                 </div>
+
+
 
 
       <?php require __DIR__.'/footer.php'; ?>

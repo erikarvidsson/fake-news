@@ -6,11 +6,16 @@
 </div>
               <div class="row content col-12">
                   <div class="container">
-                    <h1 style="font-family: arial;">NEWS</h1>
+                    <h1>NEWS</h1>
+
+
+
+
+                  <?php articleByAuthor($articles['id'], $_POST) ?>
+
                     <?php foreach ($articles as $article) : ?>
-                    <a class="t-0" href="article.php?id=<?= $article['id'] ?>" style="color: black; text-decoration: none;">
-                    <img src="<?= $article['img'];?>" alt="">
                       <br>
+                      <a class="t-0" href="" style="color: black; text-decoration: none;">
                       <h2 > <?= $article['title']; ?> </h2>
                       <h6> <?= substr($article['content'], 0, 200).'...'; ?> </h6>
                       </a>
@@ -24,8 +29,11 @@
                       <br>
                   <?php endforeach ; ?>
 
+
+
+                  <!-- Över Footer -->
                   </div>
               </div>
-                  <!-- Över Footer -->
+
 
 <?php require __DIR__.'/footer.php'; ?>

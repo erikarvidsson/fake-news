@@ -35,8 +35,15 @@ if (file_exists($filename)) {
     ?> </p>
   </div>
 
+// test funktion??
 
-
+  function getArticelById($authors, $article) {
+    $news = [];
+    foreach ($article as $id) {
+      $news[] =  $id['id'].'<br>';
+    }
+    return $news;
+  };
 
 
 

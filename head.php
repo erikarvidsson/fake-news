@@ -38,7 +38,7 @@ require __DIR__.'/data.php';
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link  " href="authors.php">Authors</a>
             </li>
           </ul>
         </div>
