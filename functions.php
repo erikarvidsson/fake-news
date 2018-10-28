@@ -1,42 +1,42 @@
 <?php
 
-
-// <!-- Gett all articels from specific author  or id -->
-
+declare(strict_types=1);
 
 
-// function getArticle($a, $b) {
-//       if($a == $b)
-//         echo 'lalala';
-//       elseif ($a == $articles['id']) {
-//         echo 'hahaha';
-// }};
+function sortByDate(array $a, array $b) {
+ return strcmp($a['date'], $b['date']);
+};
+
+
+
+
+
+
+
+
+// function getArticleByName($article, $title) {
+//     foreach ($article as $title => $value) {
+//       $name[$title] = strtolower($value[$title]);
+//     }
+//     asort($name);
+//     foreach($name as $value => $title){
+//       $name[] = $article[$value];
+//     }
+//   return $name;
+// }
 //
+// echo getArticleByName($articles, 'title');
 //
-//
-
-
-function getRandomQuote($a)
-{
-  foreach ($a as $aricle) {
-      $articel[] =  $article[(rand(0, count($article)-1))];
-  }
-  return $article;
-}
-
-echo getRandomQuote($articles);
-
-
-$articles =[
-    ['title' => 'Första artikeln', 'content' => file_get_contents(__DIR__.'/content/article1.txt'), 'date' => '2018-10-15', 'author' => 'Erik', 'id' => 1, 'img' => '' ],
-    ['title' => 'Andra artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-13', 'author' => 'Author2', 'id' => 2],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-12', 'author' => 'Author3', 'id' => 3],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-05', 'author' => 'Author3', 'id' => 4],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => 5],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-25', 'author' => 'Author3', 'id' => 6],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => 7],
-    ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-09', 'author' => 'Author3', 'id' => 8],
-];
+// $articles =[
+//     ['title' => 'Första artikeln', 'content' => file_get_contents(__DIR__.'/content/article1.txt'), 'date' => '2018-10-15', 'author' => 'Erik', 'id' => 1, 'img' => '' ],
+//     ['title' => 'Andra artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-13', 'author' => 'Author2', 'id' => 2],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-12', 'author' => 'Author3', 'id' => 3],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-05', 'author' => 'Author3', 'id' => 4],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => 5],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-25', 'author' => 'Author3', 'id' => 6],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-15', 'author' => 'Author3', 'id' => 7],
+//     ['title' => 'Tredje artikeln', 'content' => file_get_contents(__DIR__.'/content/article2.txt'), 'date' => '2018-10-09', 'author' => 'Author3', 'id' => 8],
+// ];
 
 
 
@@ -116,13 +116,6 @@ $articles =[
 // print_r(array_filter($array, "Even"));
 //
 //
-
-
-
-
-
-
-
 
 
 

@@ -6,27 +6,20 @@
 </div>
               <div class="row content col-12">
                   <div class="container">
-                    <h1>NEWS</h1>
+                    <h1>AUTHORS</h1>
+                  <div class="row col-12" style="justify-content: center;">
 
-
-
-
-                  <?php articleByAuthor($articles['id'], $_POST) ?>
-
-                    <?php foreach ($articles as $article) : ?>
+                    <?php foreach ($authors as $author) : ?>
                       <br>
-                      <a class="t-0" href="" style="color: black; text-decoration: none;">
-                      <h2 > <?= $article['title']; ?> </h2>
-                      <h6> <?= substr($article['content'], 0, 200).'...'; ?> </h6>
+                      <a class="col-4" href="authorarticle.php?author=<?= $author['name']; ?>" style="color: black; text-decoration: none;">
+                      <h2 style="justify-content: center; text-align: center;"> Reed alla articels by: </h2>
+                      <div class="container" style="justify-content: center; text-align: center;">
+                      <img src="<?= $author['img']; ?>" alt="Author name" style="border-radius: 50%; width: 250px; max-width: 100%;">
+                      <h2 style="justify-content: center; text-align: center; padding-bottom: 50px;"> <?= $author['name']; ?> </h2>
+                      <p style="justify-content: center; text-align: center; padding-bottom: 50px;"> <?= $author['quote']; ?> </p>
+                      </div>
                       </a>
-                      <form action="authorarticle.php" method="get" style="text-decoration: none;">
-                        <input type="submit" name="author" value="<?= $article['author'] ?>" />
-                      </form>
 
-                      <a class="t-0" href="lala.html" style="color: black;">
-                      <?= $article['author'].' </a> '.$article['date']; ?>
-                      <br>
-                      <br>
                   <?php endforeach ; ?>
 
 
@@ -34,6 +27,6 @@
                   <!-- Över Footer -->
                   </div>
               </div>
-
+            </div>
 
 <?php require __DIR__.'/footer.php'; ?>

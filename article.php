@@ -10,7 +10,7 @@
                     <br>
                     <h2 > <?= $article['title']; ?> </h2>
                     <h6> <?= $article['content']; ?> </h6>
-                    <a class="t-0" href="" style="color: black; text-decoration: none;">
+                    <a class="t-0" href="authorarticle.php?author=<?= $article['author'] ?>" style="color: black;">
                     <p> <?= $article['author'].'  '.$article['date']; ?> </p> </a>
               <?php endif; endforeach; ?>
                   </div>
