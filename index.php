@@ -21,6 +21,7 @@
                       <a class="t-0" href="authorarticle.php?author=<?= $article['author'] ?>" style="color: black;">
                       <?= $article['author'].' </a> '.$article['date']; ?>
                     </a>
+                    <p style="float: right;"> Like: <?= $article['like'] ?> </p>
 
                       <br>
                       <br>
