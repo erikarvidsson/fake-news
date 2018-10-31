@@ -20,7 +20,7 @@ First PHP assignment
 * Adrian Jungnelius
 * Mattias Rådemar
 
-## author
+## Author
 * Erik Arvidsson
 
 
