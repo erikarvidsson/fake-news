@@ -15,10 +15,11 @@ First PHP assignment
 
 ## Testers
 * Hanna Ell
+* Adrian Jungnelius
 
 ## author
 * Erik Arvidsson
 
 
 ## License
-This project is licensed under the MIT License. Please see [LICENSE](https://github.com/lovisahallgren/FakeNews/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License. Please see [LICENSE](https://github.com/erikarvidsson/fake-news/blob/master/LICENSE) file for details.
