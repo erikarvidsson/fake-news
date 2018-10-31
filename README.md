@@ -12,10 +12,14 @@ First PHP assignment
 
 ## Built With
 * Bootstrap
+* PHP
+* HTML
+* CSS
 
 ## Testers
 * Hanna Ell
 * Adrian Jungnelius
+* Mattias Rådemar
 
 ## author
 * Erik Arvidsson
