@@ -1,6 +1,6 @@
 # fake-news
 
-<img src="https://media.giphy.com/media/AibPgpmg0BaRu8tDbn/giphy.gif" width="100%">
+<iframe src="https://giphy.com/embed/TJqk5c5XkLumgp0QH3" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SNL-snl-saturday-night-live-TJqk5c5XkLumgp0QH3">via GIPHY</a></p>
 
 
 First PHP assignment
